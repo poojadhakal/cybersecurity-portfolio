@@ -13,24 +13,29 @@ What Indicators of Compromise (IoCs) can be extracted?
 The approach consisted of the following key phases:
 
 1. File Acquisition & Preparation
+
 Extracted the file (sample.zip) provided in the location C:\Users\LetsDefend\Desktop\ChallengeFile.
 Scanned the file for basic properties such as hashes and metadata.
 
-2. Static Analysis
+3. Static Analysis
+
 Used VirusTotal to check the file's reputation, hash details, and vendor detections.
 Performed further investigation using Detect It Easy (DIE) to analyze the file structure, determine its type, and identify potential packers or obfuscation techniques.
 
-3. Dynamic Analysis
+4. Dynamic Analysis
+
 Executed the file in a controlled environment (sandbox) and monitored behavior using PowerShell scripts to log file interactions, network connections, and processes initiated.
 Observed suspicious activity such as file drops, registry changes, or PowerShell abuse.
 
-4. Indicators of Compromise (IoCs) Identification
+5. Indicators of Compromise (IoCs) Identification
+
 Extracted relevant artifacts including:
  - File hashes
  - Suspicious strings or commands
  - Network indicators (IP addresses, domains)
 
 5. Findings Validation
+
 Correlated findings across tools and logs to confirm malicious activity.
 
 
